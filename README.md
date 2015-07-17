@@ -3,5 +3,7 @@ This is replacment for my previous vim configuration based on Janus. It was too 
 
 * installation
 
-`:PlugInstall`
+** copy *.vimrc* and *.vim/* to $HOME
+
+** `:PlugInstall`
 
