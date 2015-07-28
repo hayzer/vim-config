@@ -10,5 +10,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'bling/vim-airline'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'majutsushi/tagbar'
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/seoul256.vim'
 call plug#end()
 

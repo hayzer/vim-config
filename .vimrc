@@ -1,7 +1,7 @@
 source ~/.vim/include/plugins
 
 set nocompatible
-colorscheme darkblue
+colorscheme seoul256
 
 filetype off
 filetype plugin indent on
