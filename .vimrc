@@ -8,7 +8,7 @@ filetype plugin indent on
 syntax on
 
 set nowrap
-set number
+set relativenumber
 set fo-=t
 
 set tabstop=4
@@ -36,3 +36,16 @@ map <C-M> :w!<CR>:!aspell -c %<CR>:e! %<CR>
 " Powerline
 let g:airline_theme = 'light'
 set t_Co=256
+
+" Ctrlp
+" let g:loaded_ctrlp = 1 " disable Ctrlp plugin
+let g:ctrlp_regexp = 1
+let g:ctrlp_switch_buffer = 'Et' " if file is open, jump to its buffer
+
+" neocomplete
+if has("lua")
+    let g:neocomplete#enable_at_startup = 1
+endif
+
+" customization
+let mapleader = ","

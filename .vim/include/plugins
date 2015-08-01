@@ -11,6 +11,10 @@ Plug 'bling/vim-airline'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'majutsushi/tagbar'
 Plug 'junegunn/limelight.vim'
+Plug 'L9'
+Plug 'FuzzyFinder'
+Plug 'easytags.vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'vim-misc'
 call plug#end()
 
