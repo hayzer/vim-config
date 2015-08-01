@@ -26,6 +26,10 @@ set noswapfile
 set pastetoggle=<F7>
 set laststatus=2
 
+" undo history between sessions
+set undofile
+set undodir=~/.vim/undodir
+
 " highlight only line longer then 80
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
