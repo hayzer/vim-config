@@ -51,5 +51,8 @@ if has("lua")
     let g:neocomplete#enable_at_startup = 1
 endif
 
+" Go
+let g:go_fmt_command = "goimports"
+
 " customization
 let mapleader = ","
