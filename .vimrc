@@ -8,7 +8,7 @@ filetype plugin indent on
 syntax on
 
 set nowrap
-set relativenumber
+set number
 set fo-=t
 
 set tabstop=4
@@ -25,6 +25,9 @@ set noswapfile
 
 set pastetoggle=<F7>
 set laststatus=2
+
+set foldmethod=indent
+set foldlevel=99
 
 " undo history between sessions
 set undofile
@@ -53,3 +56,4 @@ endif
 
 " customization
 let mapleader = ","
+
