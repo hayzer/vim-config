@@ -8,7 +8,7 @@ filetype plugin indent on
 syntax on
 
 set nowrap
-set relativenumber
+set number
 set fo-=t
 
 set tabstop=4
@@ -30,6 +30,9 @@ set laststatus=2
 set undofile
 set undodir=~/.vim/undodir
 
+set foldmethod=syntax
+set foldlevel=3
+
 " highlight only line longer then 80
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
@@ -39,12 +42,22 @@ map <C-M> :w!<CR>:!aspell -c %<CR>:e! %<CR>
 
 " Powerline
 let g:airline_theme = 'light'
+let g:airline#extensions#tabline#enabled = 1
 set t_Co=256
 
 " Ctrlp
 " let g:loaded_ctrlp = 1 " disable Ctrlp plugin
-let g:ctrlp_regexp = 1
-let g:ctrlp_switch_buffer = 'Et' " if file is open, jump to its buffer
+" let g:ctrlp_regexp = 1
+" let g:ctrlp_switch_buffer = 'Et' " if file is open, jump to its buffer
+let g:ctrlp_max_height = 20
+let g:ctrlp_user_command = [
+    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
+    \ 'find %s -type f'
+    \ ]
+
+" line nubmers
+" au InsertEnter * :set nu
+" au InsertLeave * :set rnu
 
 " neocomplete
 if has("lua")
