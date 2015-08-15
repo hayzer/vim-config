@@ -31,7 +31,13 @@ set undofile
 set undodir=~/.vim/undodir
 
 set foldmethod=syntax
-set foldlevel=3
+set foldlevel=2
+
+" Jump between splits
+noremap <c-k> <c-w>k
+noremap <c-j> <c-w>j
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
 
 " highlight only line longer then 80
 highlight ColorColumn ctermbg=magenta
@@ -43,6 +49,7 @@ map <C-M> :w!<CR>:!aspell -c %<CR>:e! %<CR>
 " Powerline
 let g:airline_theme = 'light'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
 set t_Co=256
 
 " Ctrlp
