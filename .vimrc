@@ -56,15 +56,11 @@ set t_Co=256
 " let g:loaded_ctrlp = 1 " disable Ctrlp plugin
 " let g:ctrlp_regexp = 1
 " let g:ctrlp_switch_buffer = 'Et' " if file is open, jump to its buffer
-let g:ctrlp_max_height = 20
-let g:ctrlp_user_command = [
-    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
-    \ 'find %s -type f'
-    \ ]
-
-" line nubmers
-" au InsertEnter * :set nu
-" au InsertLeave * :set rnu
+" let g:ctrlp_max_height = 20
+" let g:ctrlp_user_command = [
+"    \ '.git', 'cd %s && git ls-files . -co --exclude-standard',
+"    \ 'find %s -type f'
+"    \ ]
 
 " neocomplete
 if has("lua")
@@ -76,3 +72,8 @@ let g:go_fmt_command = "goimports"
 
 " customization
 let mapleader = ","
+
+" Unite
+nnoremap <C-p> :Unite file_rec/async<CR>    
+nnoremap <Leader>/ :Unite grep:.<CR>
+nnoremap <Leader>s :Unite -quick-match -auto-preview buffer<CR>
