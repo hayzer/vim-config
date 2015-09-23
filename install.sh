@@ -1,36 +1,35 @@
-#!/bin/bash
+#install vim config files
+SOURCE=vim-config.tar.gz
+TMP_DIR=/tmp/vim-config
 
-home=${HOME}
-source=vim-config.tar.gz
-tmp_dir=/tmp/vim-config
-
-function p () {
-    echo "action: " ${*}
+function msg () {
+   echo \* $1
 }
 
-p 'create temp directory'
-mkdir -p ${tmp_dir}
-cd ${tmp_dir}
+msg 'Create temp directory'
+mkdir -p ${TMP_DIR} && cd ${TMP_DIR}
 
-p 'download source'
-curl -sL -o ${source} http://github.com/hayzer/vim-config/tarball/master
+(
+	cd ${TMP_DIR}
+	msg 'Download vim-config sources'
+	curl -sL -o ${SOURCE} http://github.com/hayzer/vim-config/tarball/master
 
-p 'open source'
-tar zxf ${source}
+	msg 'Open source'
+	tar zxf ${SOURCE}
 
-p 'enter archive'
-cd hayzer-*/
+	msg 'Enter archive'
+	cd hayzer-*/
 
-cp .vimrc ${HOME}/.vimrc
-p 'copy .vimrc'
+	cp .vimrc ${HOME}/.vimrc
+	msg 'Copy .vimrc'
 
-p 'copy .vim directory'
-cp -r .vim/* ${HOME}/.vim/
+	msg 'Copy .vim directory'
+	cp -r .vim/* ${HOME}/.vim/
 
-cd -
+)
 
-p 'remove temp directory'
-rm -fr /tmp/vim-config
+msg 'Remove temp directory'
+rm -fr ${TMP_DIR}
 
 echo
 echo ************************************
@@ -38,3 +37,5 @@ echo # > open vim
 echo # > :PlugInstall
 echo ************************************
 echo
+
+exit 0
