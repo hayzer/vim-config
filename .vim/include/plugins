@@ -19,5 +19,6 @@ Plug 'easytags.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'vim-misc'
 Plug 'christophermca/meta5'
+Plug 'tmhedberg/SimpylFold'
 call plug#end()
 
