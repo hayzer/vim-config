@@ -19,5 +19,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'vim-misc'
 Plug 'christophermca/meta5'
 Plug 'tmhedberg/SimpylFold'
+Plug 'nvie/vim-flake8'
+Plug 'scrooloose/syntastic'
 call plug#end()
 
