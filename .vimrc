@@ -77,3 +77,8 @@ let mapleader = ","
 nnoremap <C-p> :Unite file_rec/async<CR>    
 nnoremap <Leader>/ :Unite grep:.<CR>
 nnoremap <Leader>s :Unite -quick-match -auto-preview buffer<CR>
+
+"SimpleFold
+let g:SimpylFold_docstring_preview = 1
+
+set tags=tags
