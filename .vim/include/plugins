@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-sensible'
 Plug 'fatih/vim-go'
 Plug 'Shougo/neocomplete'
 Plug 'Shougo/neosnippet'
@@ -8,7 +7,9 @@ Plug 'Shougo/unite.vim'
 Plug 'Shougo/vimproc'
 Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
 Plug 'davidhalter/jedi-vim'
+Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
 Plug 'https://github.com/kien/ctrlp.vim.git'
 Plug 'majutsushi/tagbar'
@@ -21,5 +22,7 @@ Plug 'christophermca/meta5'
 Plug 'tmhedberg/SimpylFold'
 Plug 'nvie/vim-flake8'
 Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'mfukar/robotframework-vim'
 call plug#end()
 
