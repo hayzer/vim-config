@@ -30,8 +30,8 @@ set laststatus=2
 set undofile
 set undodir=~/.vim/undodir
 
-set foldmethod=syntax
-set foldlevel=2
+" set foldmethod=syntax
+" set foldlevel=2
 
 " Jump between splits
 noremap <c-k> <c-w>k
@@ -92,3 +92,8 @@ set tags=tags
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+"
+" NERDtree
+map <C-n> :NERDTreeToggle<CR>
+"" To close vim when only NERDTree buffer left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
