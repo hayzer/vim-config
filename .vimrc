@@ -83,15 +83,15 @@ let g:SimpylFold_docstring_preview = 1
 
 set tags=tags
 " syntastic
-" set statusline+=%#warningsmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+set statusline+=%#warningsmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" let g:syntastic_python_checkers = ["pylint", "pyflakes", "pep8"]
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ["pylint", "pyflakes", "pep8"]
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 "
 " NERDtree
 map <C-n> :NERDTreeToggle<CR>
