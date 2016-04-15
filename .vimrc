@@ -87,7 +87,7 @@ set statusline+=%#warningsmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_python_checkers = ["pylint", "pyflakes", "pep8"]
+let g:syntastic_python_checkers = ["pep8", "pylint", "pyflakes"]
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -97,3 +97,6 @@ let g:syntastic_check_on_wq = 0
 map <C-n> :NERDTreeToggle<CR>
 "" To close vim when only NERDTree buffer left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Taglist
+nnoremap <silent><F8> :TlistToggle<CR>
