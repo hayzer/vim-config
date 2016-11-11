@@ -28,5 +28,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/FastFold'
 Plug 'pearofducks/ansible-vim'
+Plug 'buoto/gotests-vim'
 call plug#end()
 
