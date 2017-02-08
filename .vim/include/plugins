@@ -29,5 +29,7 @@ Plug 'vim-scripts/taglist.vim'
 Plug 'vim-scripts/FastFold'
 Plug 'pearofducks/ansible-vim'
 Plug 'buoto/gotests-vim'
+Plug 'vim-scripts/groovy.vim'
+Plug 'ekalinin/Dockerfile.vim'
 call plug#end()
 
