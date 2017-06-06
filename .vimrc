@@ -100,3 +100,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Taglist
 nnoremap <silent><F8> :TlistToggle<CR>
+
+" Supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"

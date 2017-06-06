@@ -31,5 +31,6 @@ Plug 'pearofducks/ansible-vim'
 Plug 'buoto/gotests-vim'
 Plug 'vim-scripts/groovy.vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'ervandew/supertab'
 call plug#end()
 
