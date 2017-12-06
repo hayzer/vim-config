@@ -32,5 +32,7 @@ Plug 'buoto/gotests-vim'
 Plug 'vim-scripts/groovy.vim'
 Plug 'ekalinin/Dockerfile.vim'
 Plug 'ervandew/supertab'
+Plug 'vimwiki/vimwiki'
+Plug 'trevordmiller/nova-vim'
 call plug#end()
 
