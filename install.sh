@@ -26,6 +26,9 @@ mkdir -p ${TMP_DIR} && cd ${TMP_DIR}
 	msg 'Copy .vim directory'
 	cp -r .vim/* ${HOME}/.vim/
 
+	msg 'Create undo dir'
+	mkdir -p ${HOME}/.vim/undodir
+
 )
 
 msg 'Remove temp directory'
