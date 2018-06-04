@@ -106,3 +106,13 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" Terraform
+"" Overwrite vim's indentation in case terraform file was open
+let g:terraform_align=1 
+
+"" Automatic fold
+let g:terraform_fold_sections=1
+
+"" Remap space as fold/unfold keystroke
+let g:terraform_remap_spacebar=1
