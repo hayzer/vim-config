@@ -37,4 +37,5 @@ Plug 'andrewstuart/vim-kubernetes'
 Plug 'hashivim/vim-terraform'
 Plug 'hashivim/vim-packer'
 Plug 'hashivim/vim-vagrant'
+Plug 'benmills/vimux'
 call plug#end()
