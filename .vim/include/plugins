@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'fatih/vim-go'
 Plug 'Shougo/neocomplete'
 Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
@@ -38,4 +37,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'hashivim/vim-packer'
 Plug 'hashivim/vim-vagrant'
 Plug 'benmills/vimux'
+Plug 'junegunn/fzf.vim'
+Plug 'jreybert/vimagit'
+Plug 'fatih/vim-go'
 call plug#end()

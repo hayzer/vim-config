@@ -116,3 +116,6 @@ let g:terraform_fold_sections=1
 
 "" Remap space as fold/unfold keystroke
 let g:terraform_remap_spacebar=1
+
+" vimagit
+nnoremap <Leader>gs :Magit<CR>
