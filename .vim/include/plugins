@@ -39,5 +39,6 @@ Plug 'hashivim/vim-vagrant'
 Plug 'benmills/vimux'
 Plug 'junegunn/fzf.vim'
 Plug 'jreybert/vimagit'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'wlemuel/vim-tldr'
 call plug#end()

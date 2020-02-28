@@ -107,6 +107,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " YAML
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+" JSON
+autocmd FileType json setlocal ts=2 sts=2 sw=2 expandtab
+
 " Terraform
 "" Overwrite vim's indentation in case terraform file was open
 let g:terraform_align=1 
